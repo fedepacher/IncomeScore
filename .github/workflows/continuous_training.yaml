@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-  schedule: # Scheduled trigger event, every 6hs
+  schedule: # Scheduled trigger event at 12am every day
     - cron: '0 0 * * *'
   workflow_dispatch: # Manual trigger event
     inputs:
@@ -74,7 +74,7 @@ jobs:
       - name: Commit .dvc file changes to Git # Create a commit of the new model
         if: always()
         run: |
-          git config --local user.email "fede_pacher@hotmail.com"
+          git config --local user.email "github_email@email.com"
           git config --local user.name "github-actions[bot]"
           git add model/model_reg.pkl.dvc
           git add model/model_clf.pkl.dvc
