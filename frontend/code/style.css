@@ -1,0 +1,72 @@
+p {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Input*/
+/*-----------------------------------------------------------------------*/
+.stTextInput > label {
+    font-size:120%;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(to bottom, #423bb6 0%,#ada8f5 100%);
+    border: 2px;
+    border-radius: 3px;
+    }
+    
+[data-baseweb="base-input"]{
+    background:linear-gradient(to bottom, #423bb6 0%,#ada8f5 100%);
+    border: 2px;
+    border-radius: 3px;
+    }
+    
+input[class]{
+    font-weight: bold;
+    font-size:120%;
+    color: white;
+    }
+
+button[class]{
+    background:linear-gradient(to bottom, #646464 0%,#b2b1b4 100%);
+    font-weight: bold;
+    font-size:120%;
+    color: black;
+    }
+
+button[class]:hover{
+    background:linear-gradient(to bottom, #423bb6 0%,#ada8f5 100%);
+    font-weight: bold;
+    font-size:120%;
+    color: white;
+    }
+
+/*-----------------------------------------------------------------------*/
+
+/*Select*/
+/*-----------------------------------------------------------------------*/
+div[data-baseweb="select"] > div {
+    background:linear-gradient(to bottom, #00C49F 0%,#91E4DB 100%);
+    /* border: 2px;
+    border-radius: 3px; */
+    font-weight: bold;
+    font-size:120%;
+    color: white;
+    height: 45px;
+    }
+
+/*-----------------------------------------------------------------------*/
+
+/*Button*/
+/*-----------------------------------------------------------------------*/
+.stButton > button{
+    font-size:120%;
+    font-weight:bold;
+    height: 2em; 
+    width: 7em; 
+    color:black;
+    background:linear-gradient(to bottom, #646464 0%,#b2b1b4 100%);
+    border: 2px;
+    border-radius: 6px;
+}
+/*-----------------------------------------------------------------------*/

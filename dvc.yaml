@@ -1,0 +1,7 @@
+stages:
+  prepare:
+    cmd: python src/prepare_data.py -f 'etl_process'
+  training:
+    cmd: python src/prepare_data.py -f 'models'
+    deps:
+      - dataset/data_prueba_limpia.csv

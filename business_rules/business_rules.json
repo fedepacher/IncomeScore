@@ -1,0 +1,804 @@
+{
+    "ingreso": 
+    {
+        "value_00": 0,
+            "limites_00" : 
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 0,
+                "max": 7000
+            },
+        "value_02": 0.2,
+            "limites_02":
+            {
+                "min": 7000,
+                "max": 8000
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": 8000,
+                "max": 9000
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": 9000,
+                "max": 10000
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": 10000,
+                "max": 15000
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 15000,
+                "max": 25000
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 25000,
+                "max": 35000
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 35000,
+                "max": 50000
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 50000,
+                "max": 70000
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 70000,
+                "max": 0
+            }
+    },
+    "semanas":
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": 0,
+                "max": 150
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 150,
+                "max": 300
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 300,
+                "max": 500
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 500,
+                "max": 0
+            }
+    },
+    "edad": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_02": 0.2,
+            "limites_02":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min1": 18,
+                "min2": 65,
+                "max1": 20,
+                "max2": 70
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min1": 20,
+                "min2": 60,
+                "max1": 25,
+                "max2": 65
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min1": 25,
+                "min2": 43,
+                "max1": 28,
+                "max2": 60
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 28,
+                "max": 43
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 0,
+                "max": 0
+            }
+    },
+    "antiguedad": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 2,
+                "max": 3
+            },
+        "value_02": 0.2,
+            "limites_02":
+            {
+                "min": 3,
+                "max": 4
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": 4,
+                "max": 5
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": 5,
+                "max": 6
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": 6,
+                "max": 9
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 9,
+                "max": 12
+            },
+        "value_07": 0.65,
+            "limites_07":
+            {
+                "min": 12,
+                "max": 24
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 24,
+                "max": 36
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 36,
+                "max": 48
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 48,
+                "max": 0
+            }
+    },
+    "tiempo_desempleado": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 3,
+                "max": 6
+            },
+        "value_02":  0.2,
+            "limites_02":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": 2,
+                "max": 3
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": 0,
+                "max": 2
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 0,
+                "max": 0
+            }
+    },
+    "trabajos": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 9,
+                "max": 0
+            },
+        "value_02":  0.2,
+            "limites_02":
+            {
+                "min": 8,
+                "max": 0
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": 6,
+                "max": 7
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": 5,
+                "max": 0
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": 4,
+                "max": 0
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 3,
+                "max": 0
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 2,
+                "max": 0
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 1,
+                "max": 0
+            }
+    },
+    "crecimiento":
+    {
+        "value_00": -0.4,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": -0.3,
+            "limites_01":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_02":  -0.2,
+            "limites_02":
+            {
+                "min": -50,
+                "max": -20
+            },
+        "value_03": 0.1,
+            "limites_03":
+            {
+                "min": -20,
+                "max": -5
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": -5,
+                "max": 0
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min1": 0,
+                "min2": 0,
+                "max1": 10,
+                "max2": 300
+            },
+        "value_06": 0.7,
+            "limites_06":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_07": 0.9,
+            "limites_07":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_08": 1.1,
+            "limites_08":
+            {
+                "min1": 10,
+                "min2": 150,
+                "max1": 50,
+                "max2": 300
+            },
+        "value_09": 1.3,
+            "limites_09":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_10": 1.5,
+            "limites_10":
+            {
+                "min": 50,
+                "max": 150
+            }
+    },
+    "decil": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_02":  0.2,
+            "limites_02":
+            {
+                "min": 3,
+                "max": 0
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": 4,
+                "max": 0
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": 5,
+                "max": 6
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 7,
+                "max": 0
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 8,
+                "max": 0
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 9,
+                "max": 0
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 10,
+                "max": 0
+            }
+    },
+    "liquidez": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": -200,
+                "max": -100
+            },
+        "value_02":  0.2,
+            "limites_02":
+            {
+                "min": -100,
+                "max": -50
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": -50,
+                "max": -25
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": -25,
+                "max": -5
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": -5,
+                "max": 5
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 5,
+                "max": 25
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 25,
+                "max": 50
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 50,
+                "max": 100
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 100,
+                "max": 200
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 200,
+                "max": 0
+            }
+    },
+    "costo": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": -200,
+                "max": -100
+            },
+        "value_02":  0.2,
+            "limites_02":
+            {
+                "min": -100,
+                "max": -50
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": -50,
+                "max": -25
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": -25,
+                "max": -5
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": -5,
+                "max": 5
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 5,
+                "max": 25
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 25,
+                "max": 50
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 50,
+                "max": 100
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 100,
+                "max": 200
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 200,
+                "max": 0
+            }
+    },
+    "jubilado": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_02":  0.2,
+            "limites_02":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": 1,
+                "max": 0
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 0,
+                "max": 0
+            }
+    },
+    "region": 
+    {
+        "value_00": 0,
+            "limites_00":
+            {
+                "min": 0,
+                "max": 0
+            },
+        "value_01": 0.1,
+            "limites_01":
+            {
+                "min": 0,
+                "max": -5
+            },
+        "value_02":  0.2,
+            "limites_02":
+            {
+                "min": -5,
+                "max": -3
+            },
+        "value_03": 0.3,
+            "limites_03":
+            {
+                "min": -3,
+                "max": -2
+            },
+        "value_04": 0.4,
+            "limites_04":
+            {
+                "min": -2,
+                "max": -1
+            },
+        "value_05": 0.5,
+            "limites_05":
+            {
+                "min": -1,
+                "max": 1
+            },
+        "value_06": 0.6,
+            "limites_06":
+            {
+                "min": 1,
+                "max": 2
+            },
+        "value_07": 0.7,
+            "limites_07":
+            {
+                "min": 2,
+                "max": 3
+            },
+        "value_08": 0.8,
+            "limites_08":
+            {
+                "min": 3,
+                "max": 5
+            },
+        "value_09": 0.9,
+            "limites_09":
+            {
+                "min": 5,
+                "max": 0
+            },
+        "value_10": 1,
+            "limites_10":
+            {
+                "min": 0,
+                "max": 0
+            }
+    }
+}

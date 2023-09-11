@@ -1,0 +1,6 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare_data.py -f 'etl_process'
+  training:
+    cmd: python src/prepare_data.py -f 'models'

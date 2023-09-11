@@ -1,0 +1,97 @@
+name: Continuous Training
+on:
+  push:
+    branches:
+      - main
+  schedule: # Scheduled trigger event, every 6hs
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Manual trigger event
+    inputs:
+      reason:
+        description: Why to run  this?
+        required: false
+        default: running Continuous Training
+jobs:
+  continuous-training:
+    runs-on: ubuntu-latest
+    permissions: # Set permissions to do git push
+      contents: write
+      pull-requests: write 
+      issues: read
+      packages: none
+    steps:
+      - name: Checkout repository # Clone the repository
+        uses: actions/checkout@v3
+      - name: Train model # Download model from GCP store
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+          URL_DATABASE: ${{ secrets.URL_DATABASE }}
+        run: |
+          pip3 install virtualenv
+          virtualenv venv
+          source venv/bin/activate
+          pip install -r src/requirements.txt
+          export GOOGLE_APPLICATION_CREDENTIALS=$(python utilities/setter.py)
+          export URL_DATABASE=$URL_DATABASE
+          dvc pull model/model_reg.pkl -r model-track
+          dvc pull model/model_clf.pkl -r model-track
+          dvc pull model/model_scaler.pkl -r model-track
+          dvc pull dataset/data_prueba_limpia.csv -r dataset-track
+          dvc unprotect model/model_reg.pkl
+          dvc unprotect model/model_clf.pkl
+          dvc unprotect model/model_scaler.pkl
+          dvc unprotect dataset/data_prueba_limpia.csv
+          dvc repro -f
+          echo "Training Completed"
+          dvc add model/model_reg.pkl -r model-track --to-remote
+          dvc add model/model_clf.pkl -r model-track --to-remote
+          dvc add model/model_scaler.pkl -r model-track --to-remote
+          dvc add dataset/data_prueba_limpia.csv -r dataset-track --to-remote
+          dvc push model/model_reg.pkl -r model-track
+          dvc push model/model_clf.pkl -r model-track
+          dvc push model/model_scaler.pkl -r model-track
+          dvc push dataset/data_prueba_limpia.csv -r dataset-track
+      - name: Create models
+        if: failure()
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+        run: |
+          pip3 install virtualenv
+          virtualenv venv
+          source venv/bin/activate
+          pip install -r src/requirements.txt
+          export GOOGLE_APPLICATION_CREDENTIALS=$(python utilities/setter.py)
+          dvc repro -f
+          echo "Training Completed"
+          dvc add model/model_reg.pkl -r model-track --to-remote
+          dvc add model/model_clf.pkl -r model-track --to-remote
+          dvc add model/model_scaler.pkl -r model-track --to-remote
+          dvc add dataset/data_prueba_limpia.csv -r dataset-track --to-remote
+          dvc push model/model_reg.pkl -r model-track
+          dvc push model/model_clf.pkl -r model-track
+          dvc push model/model_scaler.pkl -r model-track
+          dvc push dataset/data_prueba_limpia.csv -r dataset-track
+      - name: Commit .dvc file changes to Git # Create a commit of the new model
+        if: always()
+        run: |
+          git config --local user.email "fede_pacher@hotmail.com"
+          git config --local user.name "github-actions[bot]"
+          git add model/model_reg.pkl.dvc
+          git add model/model_clf.pkl.dvc
+          git add model/model_scaler.pkl.dvc
+          git add dataset/data_prueba_limpia.csv.dvc
+          git commit -m "feat(#27) updating model serialization"
+      - uses: ad-m/github-push-action@master # Create git push
+        if: always()
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.ref }}
+      - uses: iterative/setup-cml@v1
+        if: always()
+      - name: Push metrics
+        if: always()
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat report.txt >> report.md
+          cml-send-comment report.md

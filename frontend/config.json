@@ -1,0 +1,4 @@
+{
+    "frontend-service-name": "service-frontend",
+    "api-service-name": "service-api"
+}

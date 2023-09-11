@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  frontend:
+    build: frontend
+    ports: 
+      - 8080:8080
+    depends_on:
+      - api
+    volumes:
+      - ./storage:/storage
+  
+  api:
+    build: .
+    ports: 
+      - 8000:8000
+    volumes:
+      - ./storage:/storage
