@@ -1,4 +1,4 @@
-<p align=center><img src=_src/assets/income.png height=627 weight=1247><p>
+<p align=center><img src=_src/assets/income.png height=500 weight=1247><p>
 
 # <h1 align=center> **Income Credit Score System with Machine Learning** </h1>
 
