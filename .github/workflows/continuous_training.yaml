@@ -3,8 +3,11 @@ on:
   push:
     branches:
       - main
-  schedule: # Scheduled trigger event at 12am every day
-    - cron: '0 0 * * *'
+# Uncomment these lines for scheduled continuous training 
+# ----------------------------------------------------------
+  # schedule: # Scheduled trigger event at 12am every day
+  #   - cron: '0 0 * * *'
+# ----------------------------------------------------------
   workflow_dispatch: # Manual trigger event
     inputs:
       reason:
