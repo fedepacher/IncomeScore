@@ -69,7 +69,7 @@ with open('./frontend/code/style.css', 'r', encoding='utf-8') as file:
 def main():
 	left_col, cent_col, right_col = st.columns(3)
 	with cent_col:
-		st.image('./frontend/images/mox.jpg', use_column_width=True)
+		st.image('./frontend/images/logo.jpg', use_column_width=True)
 	st.markdown("<h1 style='text-align: center; color: grey;'>Income Scoring</h1>",
 	     		unsafe_allow_html=True)
 	st.markdown("<hr class='my-4'>", unsafe_allow_html=True)

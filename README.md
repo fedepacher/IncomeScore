@@ -25,7 +25,7 @@ profile information and external data referring to its environment. By consideri
 income, job seniority, number of jobs in recent years, age, state/province, income growth, 
 education, type and behavior of the industry, and social status of the population, a more complete 
 and comprehensive perspective is obtained. accurate profile of the applicant. Some of these 
-variables are obtained directly from the MOX datasets such as the specific variables of the profile, 
+variables are obtained directly from the main datasets such as the specific variables of the profile, 
 the other variables about their environment will be obtained from public databases, open government 
 data and surveys.<br>
 <br>
@@ -248,9 +248,9 @@ Where NAME_REG is a name that we pick and PROJECT_ID can be found as follow.
 Example
 
 ```
-REGISTRY_NAME = gcr.io/mox-storage-project-test/scoring-ml
-REGISTRY_NAME_FRONT = gcr.io/mox-storage-project-test/scoring-ml-frontend
-PROJECT_ID = mox-storage-project-test
+REGISTRY_NAME = gcr.io/storage-project-test/scoring-ml
+REGISTRY_NAME_FRONT = gcr.io/storage-project-test/scoring-ml-frontend
+PROJECT_ID = storage-project-test
 ```
 
 - Add SERVICE_NAME
@@ -271,7 +271,7 @@ At the end of these steps, the following secrets must be created in order to get
 
 ## Configure Github with secrets for MongoDB access
 
-In order to preserve MOX privacy, it has created an environment variable with the MongoDB URL.<br>
+In order to preserve database privacy, it has created an environment variable with the MongoDB URL.<br>
 Create a secret with the following name:
 
 - URL_DATABASE
